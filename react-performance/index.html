@@ -1,0 +1,472 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);border:0;margin:0;}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid rgba(253, 214, 23, 0.5);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#FF00FF;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><style data-href="/styles.a03ac9cc63f55f1507aa.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 2.28.2"/><style type="text/css">
+    .anchor {
+      float: left;
+      padding-right: 4px;
+      margin-left: -20px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var offset = element.offsetTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=5c53dc1031075781fe637e715c3e316d" type="image/png"/><link rel="icon" href="/favicon.svg?v=5c53dc1031075781fe637e715c3e316d" type="image/svg+xml"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=5c53dc1031075781fe637e715c3e316d"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=5c53dc1031075781fe637e715c3e316d"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=5c53dc1031075781fe637e715c3e316d"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=5c53dc1031075781fe637e715c3e316d"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=5c53dc1031075781fe637e715c3e316d"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=5c53dc1031075781fe637e715c3e316d"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=5c53dc1031075781fe637e715c3e316d"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=5c53dc1031075781fe637e715c3e316d"/><title data-react-helmet="true">React is slow, what now? | NoSleep Javascript Blog</title><meta data-react-helmet="true" name="title" content="React is slow, what now?"/><meta data-react-helmet="true" name="description" content="We study React applications performance from the ground up, the processes involved, the tools to measure and identify slow parts, the important metrics to take in account, how these impact the UX and the various ways there are available to make applications super fast and smooth. Grab a cup of coffee and enjoy the ride.
+By franleplant"/><meta data-react-helmet="true" property="og:title" content="React is slow, what now?"/><meta data-react-helmet="true" property="og:description" content="We study React applications performance from the ground up, the processes involved, the tools to measure and identify slow parts, the important metrics to take in account, how these impact the UX and the various ways there are available to make applications super fast and smooth. Grab a cup of coffee and enjoy the ride.
+By franleplant"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="franleplant"/><meta data-react-helmet="true" name="twitter:title" content="React is slow, what now?"/><meta data-react-helmet="true" name="twitter:description" content="We study React applications performance from the ground up, the processes involved, the tools to measure and identify slow parts, the important metrics to take in account, how these impact the UX and the various ways there are available to make applications super fast and smooth. Grab a cup of coffee and enjoy the ride.
+By franleplant"/><script data-react-helmet="true" id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/c388336980630bd93629517cb/79c014026202565af1500f561.js");
+          </script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>            
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-2006751746052752",
+                enable_page_level_ads: true
+              });
+          </script><link as="script" rel="preload" href="/webpack-runtime-04fbafd859ab94f12b33.js"/><link as="script" rel="preload" href="/styles-55e82d6ff5158c00b714.js"/><link as="script" rel="preload" href="/framework-741ade27086b2708e961.js"/><link as="script" rel="preload" href="/app-b1e139d0da4ec73b7381.js"/><link as="script" rel="preload" href="/201ad6c3f2c882b9d9cf079e4b183f9823aadb3d-8b06601edeb74dd5b1c5.js"/><link as="script" rel="preload" href="/07df214fa9a6bfa95f2aa0c4b93680dbfb4b3ad9-8b678077d6dbe8f052d8.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-tsx-13d8f6300d73de8b3055.js"/><link as="fetch" rel="preload" href="/page-data/react-performance/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="1o0b8os">.css-1o0b8os{margin-left:auto;margin-right:auto;max-width:52rem;padding:1.625rem 1.21875rem;}</style><div class="css-1o0b8os edujns40"><style data-emotion-css="h0tuly">:not(pre) > code[class*="language-"]{word-break:break-word;}.code-block-title{margin-bottom:-0.6rem;padding:0.5em 1em;font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;background-color:black;color:white;z-index:0;border-top-left-radius:0.3em;border-top-right-radius:0.3em;}button,input[type="submit"]{background-color:#FF00FF !important;border:0;}button,input[type=submit]:hover{background-color:#FF00FF !important;}button,input{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;padding:4px 10px;border:1px solid #ccc;outline:0 !important;border-radius:4px;box-sizing:boder-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}input:focus{border:1px solid #FF00FF !important;box-shadow:0px 0px 2px #FF00FFDE;}blockquote{margin-top:40px;margin-bottom:40px;border-left:6px solid #FDD617;background:rgba(253,214,23,0.1);padding-top:20px;padding-bottom:20px;color:rgba(0,0,0,0.8);}</style><header><style data-emotion-css="1151z2w">.css-1151z2w{margin:0;}.css-1151z2w img{max-width:25%;margin:0;}</style><h3 class="css-1151z2w e1k5ywqr0"><a href="/"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOTYwIDQxMC44IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA5NjAgNDEwLjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxnPg0KCQkJPHBhdGggZmlsbD0iIzAxMDIwMiIgZD0iTTQ0OS40LDI0OGgtMTcuM2wtMjUuNS00NC44VjI0OGgtMTcuNHYtNzJoMTcuNGwyNS41LDQ0LjhWMTc2aDE3LjNWMjQ4eiIvPg0KCQkJPHBhdGggZmlsbD0iIzAxMDIwMiIgZD0iTTUyMS40LDIxMy41YzAsNy0xLjMsMTMuMi0zLjksMTguN2MtMi42LDUuNC02LjMsOS42LTExLjEsMTIuNWMtNC44LDIuOS0xMC4zLDQuNC0xNi40LDQuNA0KCQkJCWMtNi4xLDAtMTEuNi0xLjQtMTYuMy00LjJjLTQuOC0yLjgtOC41LTYuOS0xMS4xLTEyLjFjLTIuNy01LjItNC0xMS4zLTQuMi0xOC4xdi00LjFjMC03LjEsMS4zLTEzLjMsMy45LTE4LjcNCgkJCQljMi42LTUuNCw2LjMtOS42LDExLjEtMTIuNWM0LjgtMi45LDEwLjMtNC40LDE2LjUtNC40YzYuMSwwLDExLjUsMS41LDE2LjMsNC40YzQuOCwyLjksOC41LDcsMTEuMiwxMi40YzIuNyw1LjQsNCwxMS41LDQsMTguNA0KCQkJCVYyMTMuNXogTTUwMy44LDIxMC40YzAtNy4yLTEuMi0xMi42LTMuNi0xNi4zYy0yLjQtMy43LTUuOC01LjYtMTAuMy01LjZjLTguNywwLTEzLjMsNi41LTEzLjgsMTkuNmwwLDUuMw0KCQkJCWMwLDcuMSwxLjIsMTIuNSwzLjUsMTYuM2MyLjMsMy44LDUuOCw1LjcsMTAuNCw1LjdjNC40LDAsNy44LTEuOSwxMC4xLTUuNnMzLjYtOS4xLDMuNi0xNi4xVjIxMC40eiIvPg0KCQkJPHBhdGggZmlsbD0iIzAxMDIwMiIgZD0iTTU2Ny41LDIyOC45YzAtMi41LTAuOS00LjUtMi43LTUuOWMtMS44LTEuNC01LTIuOS05LjUtNC40Yy00LjUtMS41LTguMi0zLTExLjEtNC40DQoJCQkJYy05LjMtNC42LTE0LTEwLjktMTQtMTguOWMwLTQsMS4yLTcuNSwzLjUtMTAuNmMyLjMtMy4xLDUuNi01LjQsOS45LTcuMWM0LjMtMS43LDktMi41LDE0LjMtMi41YzUuMiwwLDkuOCwwLjksMTMuOSwyLjgNCgkJCQljNC4xLDEuOCw3LjMsNC41LDkuNiw3LjljMi4zLDMuNCwzLjQsNy4zLDMuNCwxMS43aC0xNy4zYzAtMi45LTAuOS01LjItMi43LTYuOGMtMS44LTEuNi00LjItMi40LTcuMy0yLjQNCgkJCQljLTMuMSwwLTUuNiwwLjctNy4zLDIuMWMtMS44LDEuNC0yLjcsMy4xLTIuNyw1LjJjMCwxLjgsMSwzLjUsMyw1czUuNSwzLjEsMTAuNCw0LjdjNSwxLjYsOS4xLDMuMywxMi4zLDUuMg0KCQkJCWM3LjgsNC41LDExLjcsMTAuNywxMS43LDE4LjZjMCw2LjMtMi40LDExLjItNy4xLDE0LjhjLTQuOCwzLjYtMTEuMyw1LjQtMTkuNSw1LjRjLTUuOCwwLTExLjEtMS0xNS45LTMuMQ0KCQkJCWMtNC43LTIuMS04LjMtNS0xMC43LTguNmMtMi40LTMuNi0zLjYtNy44LTMuNi0xMi42aDE3LjRjMCwzLjksMSw2LjcsMyw4LjVjMiwxLjgsNS4yLDIuNyw5LjcsMi43YzIuOSwwLDUuMS0wLjYsNi44LTEuOQ0KCQkJCUM1NjYuNywyMzIuOCw1NjcuNSwyMzEuMSw1NjcuNSwyMjguOXoiLz4NCgkJCTxwYXRoIGZpbGw9IiMwMTAyMDIiIGQ9Ik02MTEuMiwyMzQuNmgzMC4yVjI0OGgtNDcuNnYtNzJoMTcuNFYyMzQuNnoiLz4NCgkJCTxwYXRoIGZpbGw9IiMwMTAyMDIiIGQ9Ik02OTMuNCwyMTcuNGgtMjcuM3YxNy4yaDMyLjNWMjQ4aC00OS42di03Mmg0OS43djEzLjRoLTMyLjR2MTUuMmgyNy4zVjIxNy40eiIvPg0KCQkJPHBhdGggZmlsbD0iIzAxMDIwMiIgZD0iTTc1MC4xLDIxNy40aC0yNy4zdjE3LjJoMzIuM1YyNDhoLTQ5LjZ2LTcyaDQ5Ljd2MTMuNGgtMzIuNHYxNS4yaDI3LjNWMjE3LjR6Ii8+DQoJCQk8cGF0aCBmaWxsPSIjMDEwMjAyIiBkPSJNNzc5LjUsMjIzLjZWMjQ4aC0xNy40di03MmgyOC44YzUuNSwwLDEwLjQsMSwxNC42LDNjNC4yLDIsNy41LDQuOSw5LjgsOC43YzIuMywzLjcsMy41LDgsMy41LDEyLjcNCgkJCQljMCw3LTIuNSwxMi42LTcuNSwxNi44Yy01LDQuMi0xMS45LDYuMy0yMC43LDYuM0g3NzkuNXogTTc3OS41LDIxMC4yaDExLjRjMy40LDAsNS45LTAuOCw3LjctMi41czIuNi00LjEsMi42LTcuMQ0KCQkJCWMwLTMuNC0wLjktNi4xLTIuNy04LjFjLTEuOC0yLTQuMy0zLTcuNC0zLjFoLTExLjZWMjEwLjJ6Ii8+DQoJCQk8cGF0aCBmaWxsPSIjMDEwMjAyIiBkPSJNMzk2LjEsMjcwaDkuN3Y1MS4yYzAsNi43LTIsMTItNi4xLDE2Yy00LjEsNC05LjQsNS45LTE1LjksNS45Yy02LjYsMC0xMS45LTEuOC0xNS44LTUuMw0KCQkJCWMtMy45LTMuNS01LjgtOC42LTUuNi0xNS4zbDAuMS0wLjNoOS40YzAsNC41LDEsNy44LDMuMSwxMGMyLjEsMi4yLDUsMy4zLDguOSwzLjNjMy42LDAsNi41LTEuMyw4LjgtMy45DQoJCQkJYzIuMy0yLjYsMy40LTYuMSwzLjQtMTAuNFYyNzB6Ii8+DQoJCQk8cGF0aCBmaWxsPSIjMDEwMjAyIiBkPSJNNDU4LjcsMzIzLjVoLTI3LjFsLTYuNCwxOC42aC05LjlsMjYtNzJoOC40bDI1LjQsNzJINDY1TDQ1OC43LDMyMy41eiBNNDM0LjQsMzE1LjNoMjEuNWwtMTAuNS0zMC45DQoJCQkJaC0wLjNMNDM0LjQsMzE1LjN6Ii8+DQoJCQk8cGF0aCBmaWxsPSIjMDEwMjAyIiBkPSJNNTAzLjEsMzIzLjFsMS42LDZoMC4zbDEuNi02bDE4LjYtNTMuMWgxMC41bC0yNi44LDcyaC04LjRsLTI2LjgtNzJoMTAuNkw1MDMuMSwzMjMuMXoiLz4NCgkJCTxwYXRoIGZpbGw9IiMwMTAyMDIiIGQ9Ik01NzguOCwzMjMuNWgtMjcuMWwtNi40LDE4LjZoLTkuOWwyNi03Mmg4LjRsMjUuNCw3MmgtOS45TDU3OC44LDMyMy41eiBNNTU0LjUsMzE1LjNoMjEuNWwtMTAuNS0zMC45DQoJCQkJaC0wLjNMNTU0LjUsMzE1LjN6Ii8+DQoJCQk8cGF0aCBmaWxsPSIjMDEwMjAyIiBkPSJNNjQ0LjEsMzIzLjljMC0zLjMtMS4yLTYtMy41LTguMmMtMi4zLTIuMi02LjUtNC4xLTEyLjQtNS42Yy03LjMtMS44LTEzLTQuNS0xNy4xLTgNCgkJCQljLTQuMS0zLjUtNi4yLTgtNi4yLTEzLjNjMC01LjYsMi4yLTEwLjMsNi42LTE0LjFzMTAuMi01LjYsMTcuMi01LjZjNy42LDAsMTMuNiwyLjIsMTguMSw2LjVjNC41LDQuMyw2LjcsOS4zLDYuNiwxNS4xbC0wLjEsMC4zDQoJCQkJSDY0NGMwLTQuMS0xLjQtNy41LTQuMy0xMC4xYy0yLjktMi43LTYuNS00LTExLTRjLTQuNiwwLTgsMS4xLTEwLjUsMy4zcy0zLjYsNS4xLTMuNiw4LjZjMCwzLjEsMS4zLDUuNyw0LDcuOA0KCQkJCWMyLjcsMi4xLDcsMy45LDEyLjksNS41YzcuMywxLjksMTIuOCw0LjcsMTYuNiw4LjNjMy44LDMuNyw1LjcsOC4yLDUuNywxMy42YzAsNS44LTIuMywxMC41LTYuOSwxNGMtNC42LDMuNS0xMC41LDUuMy0xNy45LDUuMw0KCQkJCWMtNywwLTEzLjEtMS45LTE4LjQtNS44Yy01LjMtMy45LTcuOS05LjEtNy43LTE1LjZsMC4xLTAuM2g5LjNjMCw0LjUsMS43LDgsNS4xLDEwLjVjMy40LDIuNSw3LjMsMy43LDExLjYsMy43DQoJCQkJYzQuNiwwLDguMy0xLDExLTMuMUM2NDIuOCwzMzAuMiw2NDQuMSwzMjcuNCw2NDQuMSwzMjMuOXoiLz4NCgkJCTxwYXRoIGZpbGw9IiMwMTAyMDIiIGQ9Ik03MTkuMSwzMTlsMC4xLDAuM2MwLjEsNi44LTIuMiwxMi40LTcuMSwxN2MtNC45LDQuNi0xMS4zLDYuOC0xOS4zLDYuOGMtOC4xLDAtMTQuOC0yLjktMTkuOS04LjcNCgkJCQljLTUuMS01LjgtNy43LTEzLjEtNy43LTIydi0xMi44YzAtOC45LDIuNi0xNi4yLDcuNy0yMmM1LjEtNS44LDExLjgtOC43LDE5LjktOC43YzguMSwwLDE0LjYsMi4yLDE5LjQsNi41DQoJCQkJYzQuOCw0LjMsNy4yLDEwLjEsNywxNy4ybC0wLjEsMC4zaC05LjRjMC01LTEuNS05LTQuNS0xMmMtMy0yLjktNy4yLTQuNC0xMi42LTQuNGMtNS40LDAtOS44LDIuMi0xMyw2LjYNCgkJCQljLTMuMiw0LjQtNC44LDkuOC00LjgsMTYuM3YxMi45YzAsNi42LDEuNiwxMiw0LjgsMTYuNGMzLjIsNC40LDcuNiw2LjYsMTMsNi42YzUuNCwwLDkuNi0xLjUsMTIuNi00LjRjMy0yLjksNC41LTcsNC41LTEyLjENCgkJCQlINzE5LjF6Ii8+DQoJCQk8cGF0aCBmaWxsPSIjMDEwMjAyIiBkPSJNNzQxLjYsMzEwLjhWMzQyaC05Ljd2LTcyaDI0LjZjNy45LDAsMTMuOSwxLjcsMTguMSw1LjJjNC4yLDMuNSw2LjIsOC42LDYuMiwxNS4yYzAsMy43LTEsNi45LTIuOSw5LjYNCgkJCQljLTEuOSwyLjctNC43LDQuOS04LjQsNi41YzQsMS4zLDYuOCwzLjQsOC41LDYuM2MxLjcsMi45LDIuNiw2LjUsMi42LDEwLjd2Ni44YzAsMi4yLDAuMiw0LjMsMC43LDZjMC41LDEuOCwxLjQsMy4yLDIuNiw0LjR2MS4yDQoJCQkJaC0xMGMtMS4zLTEuMS0yLjEtMi44LTIuNS00LjljLTAuNC0yLjItMC41LTQuNC0wLjUtNi43di02LjZjMC0zLjktMS4xLTctMy40LTkuNHMtNS4zLTMuNi05LjItMy42SDc0MS42eiBNNzQxLjYsMzAzLjFoMTMuOQ0KCQkJCWM1LjUsMCw5LjUtMSwxMS45LTMuMXMzLjYtNS4zLDMuNi05LjZjMC00LjEtMS4yLTcuMi0zLjUtOS40Yy0yLjQtMi4yLTYtMy4zLTExLTMuM2gtMTQuOVYzMDMuMXoiLz4NCgkJCTxwYXRoIGZpbGw9IiMwMTAyMDIiIGQ9Ik04MDcuMSwzNDJoLTkuOHYtNzJoOS44VjM0MnoiLz4NCgkJCTxwYXRoIGZpbGw9IiMwMTAyMDIiIGQ9Ik04MzQuNywzMTMuMVYzNDJIODI1di03MmgyNy42YzcuNywwLDEzLjcsMiwxNy45LDUuOWM0LjMsNCw2LjQsOS4yLDYuNCwxNS42YzAsNi41LTIuMSwxMS44LTYuNCwxNS43DQoJCQkJYy00LjMsMy45LTEwLjMsNS45LTE3LjksNS45SDgzNC43eiBNODM0LjcsMzA1LjVoMTcuOGM0LjksMCw4LjUtMS4zLDEwLjktMy45YzIuNC0yLjYsMy42LTUuOSwzLjYtOS45cy0xLjItNy4zLTMuNi0xMA0KCQkJCXMtNi4xLTQtMTAuOS00aC0xNy44VjMwNS41eiIvPg0KCQkJPHBhdGggZmlsbD0iIzAxMDIwMiIgZD0iTTkzOS44LDI3Ny42SDkxNlYzNDJoLTkuN3YtNjQuNGgtMjMuNVYyNzBoNTdWMjc3LjZ6Ii8+DQoJCTwvZz4NCgk8L2c+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiMwMTAyMDIiIGQ9Ik0xMDIuNSwxNDQuN0wyNy43LDcwYy0zLjMsMy4yLTYuNiw2LjQtOS44LDkuOGw3NC43LDc0LjdDOTUuOCwxNTEuMSw5OS4xLDE0Ny44LDEwMi41LDE0NC43eiIvPg0KCQk8cGF0aCBmaWxsPSIjMDEwMjAyIiBkPSJNMTA3LjYsMTguM2MtNC4zLDEuNy04LjUsMy42LTEyLjYsNS42bDQyLjUsOTYuOWM0LjEtMiw4LjMtMy45LDEyLjYtNS41TDEwNy42LDE4LjN6Ii8+DQoJPC9nPg0KCTxjaXJjbGUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDEwMjAyIiBzdHJva2Utd2lkdGg9IjEzLjc5NDQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgY3g9IjIwNC43IiBjeT0iMjU2LjciIHI9IjEyMi40Ii8+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiNGRkQ3MDMiIGQ9Ik0yNzMuNSwxOTcuN2MtMy4yLDQuNC04LjQsNy40LTE0LjMsNy40Yy05LjcsMC0xNy42LTcuOS0xNy42LTE3LjZjMC00LjQsMS42LTguNCw0LjMtMTEuNQ0KCQkJYy0xMi4zLTYuMy0yNi4zLTkuOS00MS4xLTkuOWMtNTAsMC05MC42LDQwLjYtOTAuNiw5MC42czQwLjYsOTAuNiw5MC42LDkwLjZzOTAuNi00MC42LDkwLjYtOTAuNg0KCQkJQzI5NS4zLDIzNC4yLDI4Ny4xLDIxMy42LDI3My41LDE5Ny43eiBNMjA0LjcsMjkyLjdjLTE5LjksMC0zNi0xNi4xLTM2LTM2YzAtMTkuOSwxNi4xLTM2LDM2LTM2czM2LDE2LjEsMzYsMzYNCgkJCVMyMjQuNiwyOTIuNywyMDQuNywyOTIuN3oiLz4NCgk8L2c+DQoJPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDEwMjAyIiBzdHJva2Utd2lkdGg9IjExLjAzNTUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTIwNC43LDI1Ni43Ii8+DQo8L2c+DQo8L3N2Zz4NCg==" alt="NoSleep Javascript"/></a></h3></header><main><article><header><style data-emotion-css="ykg09r">.css-ykg09r{margin-top:1.625rem;margin-bottom:0;}</style><h1 class="css-ykg09r">React is slow, what now?</h1><style data-emotion-css="1jp1cwv">.css-1jp1cwv{display:block;margin-bottom:1.625rem;}</style><div style="font-size:0.87055rem;line-height:1.625rem" class="css-1jp1cwv">December 04, 2020 • 11 min read<style data-emotion-css="p445hl">.css-p445hl{margin-top:10px;margin-left:-5px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}</style><div class="css-p445hl e17mrjfc0"><style data-emotion-css="9dqtmz">.css-9dqtmz{box-sizing:border-box;margin:0;margin-top:5px;padding:0;color:black;line-height:1.5;display:inline-block;height:auto;margin-right:8px;padding:0 7px;font-size:12px;line-height:20px;white-space:nowrap;background:rgba(253,214,23,0.05);border:1px solid #FDD617;border-radius:4px;cursor:pointer;}.css-9dqtmz:hover{background:rgba(253,214,23,0.5);}</style><span class="css-9dqtmz e17mrjfc1">#React</span><span class="css-9dqtmz e17mrjfc1">#Javascript</span><span class="css-9dqtmz e17mrjfc1">#Typescript</span><span class="css-9dqtmz e17mrjfc1">#props</span><span class="css-9dqtmz e17mrjfc1">#state</span><span class="css-9dqtmz e17mrjfc1">#chrome dev tools</span><span class="css-9dqtmz e17mrjfc1">#react dev tools</span></div></div></header><section><h2 id="tldr-the-gist"><a href="#tldr-the-gist" aria-label="tldr the gist permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>TLDR: the gist</h2>
+<ul>
+<li>Measure performance! If you don’t measure it’s the same as doing nothing.</li>
+<li>You can optimize your React performance by improving <strong>what</strong> (🤔) and <strong>which</strong> (🧙) components render.</li>
+<li>
+<p>🧙 To improve <strong>which</strong> component renders you can use</p>
+<ul>
+<li><code class="language-text">React.memo</code></li>
+<li><code class="language-text">useCallback</code></li>
+<li><code class="language-text">useMemo</code></li>
+<li>Make sure your props have stable references</li>
+<li>Virtualization</li>
+</ul>
+</li>
+<li>
+<p>🤔 To improve <strong>what</strong> components render you should</p>
+<ul>
+<li>identify the slow components</li>
+<li>simplify, use more efficient abstractions, make smaller trees, etc</li>
+</ul>
+</li>
+</ul>
+<p>If this got your attention read on:</p>
+<h2 id="table-of-contents"><a href="#table-of-contents" aria-label="table of contents permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Table of Contents</h2>
+<div class="toc">
+<ul>
+<li><a href="#tldr-the-gist">TLDR: the gist</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li>
+<p><a href="#io-performance-problems-in-react">io performance problems in React</a></p>
+<ul>
+<li><a href="#potential-solutions">Potential solutions</a></li>
+</ul>
+</li>
+<li><a href="#cpu-performance-problems-in-react">CPU performance problems in React</a></li>
+<li><a href="#react-render-and-commit-phase">React render and commit phase</a></li>
+<li>
+<p><a href="#measuring">Measuring</a></p>
+<ul>
+<li><a href="#chrome-dev-tools-performance-tab">Chrome dev tool’s Performance tab</a></li>
+<li><a href="#react-dev-tools-performance-tab">React dev tool’s Performance tab</a></li>
+<li><a href="#measuring-1">Measuring</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#general-solutions-to-cpu-bound-problems-in-react-applications">General solutions to cpu-bound problems in React applications</a></p>
+<ul>
+<li><a href="#-improving-what-components-render">🤔 Improving <em>what</em> components render</a></li>
+<li>
+<p><a href="#%F0%9F%A7%99-improving-which-components-render">🧙 Improving <em>which</em> components render</a></p>
+<ul>
+<li><a href="#virtualization">Virtualization</a></li>
+<li>
+<p><a href="#props-optimization">Props Optimization</a></p>
+<ul>
+<li><a href="#reactmemo"><code class="language-text">React.memo</code></a></li>
+<li><a href="#fake-prop-changes-usecallback">Fake prop changes: <code class="language-text">useCallback</code></a></li>
+<li><a href="#fake-prop-changes-usememo">Fake prop changes: <code class="language-text">useMemo</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#summary">Summary</a></p>
+<ul>
+<li><a href="#props-changed">Props changed</a></li>
+<li><a href="#parent-rendered">Parent rendered</a></li>
+<li><a href="#hooks-changed-state-context">Hooks changed (state, context)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#closing">Closing</a></li>
+</ul>
+</div>
+<h2 id="introduction"><a href="#introduction" aria-label="introduction permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction</h2>
+<p>In general computer programs can be:</p>
+<ul>
+<li><strong>io-bound</strong>: spend most of their time making inputs and outputs</li>
+<li><strong>cpu-bound</strong>: spend most of their time making calculations</li>
+</ul>
+<p>And how do these translate into Front End apps and in particular React apps?</p>
+<h2 id="io-performance-problems-in-react"><a href="#io-performance-problems-in-react" aria-label="io performance problems in react permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>io performance problems in React</h2>
+<ul>
+<li>Browser apps can be <strong>io-bounded</strong> mostly in terms of asynchronous http calls.</li>
+<li>a poor management of these network requests can slow down your app</li>
+</ul>
+<h3 id="potential-solutions"><a href="#potential-solutions" aria-label="potential solutions permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Potential solutions</h3>
+<p>Although this will not be the focus of this post let’s quickly cover some
+important areas where solutions and improvements might be found for io-bound
+problems:</p>
+<ul>
+<li>lazy load as much as you can.</li>
+<li>careful with the initial load of assets and also backend requests.</li>
+<li>reduce the amount of times you load highly static stuff (select options, configurations, etc)</li>
+<li>debounce the amount of times you make certain requests.</li>
+<li>parallelize request as much as possible via <code class="language-text">Promise.all</code>.</li>
+<li>make your critical BE endpoints more efficient (i.e. by tweaking DB accesses and such).</li>
+</ul>
+<h2 id="cpu-performance-problems-in-react"><a href="#cpu-performance-problems-in-react" aria-label="cpu performance problems in react permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CPU performance problems in React</h2>
+<blockquote>
+<p>This is going to be the main focus of this post.</p>
+</blockquote>
+<p>Before talking about performance we need to define it in a more concrete way:</p>
+<ul>
+<li>browser apps are <a href="https://stackoverflow.com/questions/30932870/why-doesnt-javascript-get-its-own-thread-in-common-browsers">single thread</a> programs for the most part.</li>
+<li>scripting, i.e. Javascript, DOM rendering, event handling, etc; all run in the same thread.</li>
+<li>if a Javascript module is slow it can block the main thread.</li>
+<li>if the main thread is blocked then the UI will seem unresponsive (<strong>fps</strong> will drop).</li>
+<li>unresponsive UIs are one of the worst offenders in terms of <strong>User Experience</strong>.</li>
+</ul>
+<p>This all boils down to the concept of <code class="language-text">fps</code> or <strong>Frames Per Second</strong>.
+Responsive UIs will deliver a minimum of 30 fps or more ideally 60 fps, this means
+that every frame of your app, even the more demanding code paths, should compute in <strong>30 ms or less</strong>.</p>
+<blockquote>
+<p>If your Javascript is slow it might cause “frames to be dropped” which means
+computing a frame in more than 30 ms.</p>
+</blockquote>
+<p>To fully understand how this applies to React we need to understand how React works
+and what React’s <strong>render and commit phase</strong> are but in short we can say that:</p>
+<blockquote>
+<p>If a React component update is triggered then the <strong>entire sub tree needs to be
+rendered in less than 30ms</strong>.</p>
+</blockquote>
+<p>This becomes specially problematic when you have complex and long component structures
+such as Tables, Trees and Lists and in which sometimes (for example the first time) you will
+need to re render large parts of them.</p>
+<blockquote>
+<p><strong>Summary:</strong> we should figure out which expensive interactions are dropping frames,
+measure them to confirm and fix them.</p>
+</blockquote>
+<h2 id="react-render-and-commit-phase"><a href="#react-render-and-commit-phase" aria-label="react render and commit phase permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>React render and commit phase</h2>
+<p>React works (at a high level) in two phases</p>
+<p><strong>Render phase:</strong></p>
+<ul>
+<li>Happens when a component updates i.e. props or hooks changed.</li>
+<li>React traverses the component sub tree rendering each child and computing the virtual DOM (VDOM) sub tree.</li>
+<li>Only the “dirty” sub tree needs to be recomputed i.e. the updated component parents might not need to be re rendered.</li>
+<li>This phase is proportional to the size of the sub tree being rendered.</li>
+<li>This phase is also proportional to how expensive it is to compute each child component.</li>
+<li>We can give React hints to make this process more efficient i.e. <code class="language-text">React.memo</code>.</li>
+</ul>
+<p><strong>Commit phase:</strong></p>
+<ul>
+<li>The render phase outputs a new virtual DOM of the entire UI.</li>
+<li>In the commit phase Reacts compares the new tree with the previous one (VDOM diffing).</li>
+<li>React calculates the minimum DOM mutations needed to reflect the new VDOM tree.</li>
+<li>React mutates the DOM.</li>
+<li>Your UI is now updated.</li>
+<li>This phase is pretty efficient by default.</li>
+</ul>
+<p>This whole process needs to happen in less than 30 or 16 ms (30 fps and 60 fps respectively) for your UI to be considered
+responsive, as you can see there’s a lot of work and that work is proportional to the size of your app.</p>
+<p>We will explore ways to make mostly the <strong>Render phase</strong> more efficient but first let’s discuss
+how to measure and how to find out what are the slow parts of our app and how bad they are.</p>
+<h2 id="measuring"><a href="#measuring" aria-label="measuring permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Measuring</h2>
+<p>In 2020 we have pretty solid tools for measuring browser side performance, these
+are the ones I use the most:</p>
+<ul>
+<li>Chrome dev tool’s Performance tab.</li>
+<li>React dev tool’s Performance tab.</li>
+</ul>
+<h3 id="chrome-dev-tools-performance-tab"><a href="#chrome-dev-tools-performance-tab" aria-label="chrome dev tools performance tab permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Chrome dev tool’s Performance tab</h3>
+<p>This is the most comprehensive tool, it is useful for any browser application,
+it measures frames per second, records stack traces, identifies slow / hot parts of your code,
+and much more. The main UI is the <a href="http://www.brendangregg.com/flamegraphs.html">flame chart</a>.</p>
+<p>Here’s a <a href="https://reactjs.org/docs/optimizing-performance.html#profiling-components-with-the-chrome-performance-tab">good doc</a>
+of Chrome’s Performance Tab applied to React.</p>
+<h3 id="react-dev-tools-performance-tab"><a href="#react-dev-tools-performance-tab" aria-label="react dev tools performance tab permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>React dev tool’s Performance tab</h3>
+<p>You need to install the <a href="https://reactjs.org/blog/2019/08/15/new-react-devtools.html">React dev tool extension</a> in your browser.</p>
+<p>It specializes the information in the Chrome dev tool’s Performance tab to
+React. You can see the different <strong>commit phases</strong> and the Javascript code that was run in its respective
+<strong>render phase</strong> through a <strong>flame chart</strong>.</p>
+<p>Through this tool you can easily find out:</p>
+<ul>
+<li>when a component re renders</li>
+<li>what props changed</li>
+<li>what hooks changed i.e. state, context, etc.</li>
+</ul>
+<p>Check the <a href="https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html">introductory post</a> for more information.</p>
+<h3 id="measuring-1"><a href="#measuring-1" aria-label="measuring 1 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Measuring</h3>
+<p>This is the <strong>methodology</strong> I like to use when measuring front end applications:</p>
+<ul>
+<li><strong>identify the problem</strong>: identify page interactions that make the UI feel unresponsive.</li>
+<li><strong>create a hypothesis</strong>: optionally, we might have some ideas where the problem might be.</li>
+<li><strong>measure</strong>: verify the problem by measuring and looking at important metrics such as <strong>fps</strong>.</li>
+<li><strong>measure</strong>: identify problematic pieces of code, optionally: validate your hypothesis.</li>
+<li><strong>create a solution</strong>: apply a solution based off the previous steps</li>
+<li><strong>measure the solution</strong>: validate that the problem has been resolved or alleviated by looking at the important metrics.</li>
+</ul>
+<blockquote>
+<p>If you optimize something without measuring then you are practically doing nothing.</p>
+</blockquote>
+<p>There might be cases where the problem is super obvious and I won’t tell you that going straight
+to fixing it is naturally bad, but most of the problems are not obvious and measuring will be
+cornerstone of the performance improvement process.</p>
+<p>Additionally, if you measure you can later tell your users, stakeholders and more importantly your <strong>boss
+that you have improved the performance of a given area of your app by x%</strong> which is always a good
+way of communicating upwards what we accomplish inside the rabbit hole.</p>
+<h2 id="general-solutions-to-cpu-bound-problems-in-react-applications"><a href="#general-solutions-to-cpu-bound-problems-in-react-applications" aria-label="general solutions to cpu bound problems in react applications permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>General solutions to cpu-bound problems in React applications</h2>
+<p>Now that we have measured and identified the problematic areas let’s cover
+potential solutions.</p>
+<blockquote>
+<p>You can optimize your React performance by
+improving <strong>what</strong> components render and
+<strong>which</strong> components render.</p>
+</blockquote>
+<h3 id="-improving-what-components-render"><a href="#-improving-what-components-render" aria-label=" improving what components render permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>🤔 Improving <em>what</em> components render</h3>
+<p>Identifying the slow parts of our React app will usually
+point out to some particular components that are slow to render
+(or that have too many instances in a single page, more on this in the <strong>which</strong> section).</p>
+<p>There might be a number of reasons those components are slow, including:</p>
+<ul>
+<li>they do blocking calculations</li>
+<li>they render large trees</li>
+<li>they use expensive / non efficient libraries</li>
+</ul>
+<p>Most of these boil down to improving how fast your components render,
+sometimes critical components cannot rely on too complicated libraries
+and so you need to go back to basic and roll your own simpler implementation.</p>
+<p>I have experienced something like this when using <a href="https://formik.org/">Formik</a> (which I love)
+or should I say abusing Formik on several cells of every single row of a complex table.</p>
+<p>You can go a long way making your components more efficient but eventually you will need
+to focus on <strong>which</strong> components render:</p>
+<h3 id="🧙-improving-which-components-render"><a href="#%F0%9F%A7%99-improving-which-components-render" aria-label="🧙 improving which components render permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>🧙 Improving <em>which</em> components render</h3>
+<p>There are two broad categories where we can improve this aspect:</p>
+<ul>
+<li>Virtualization</li>
+<li>Prop optimization</li>
+</ul>
+<h4 id="virtualization"><a href="#virtualization" aria-label="virtualization permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Virtualization</h4>
+<p>It means <strong>only render what is visible in the viewport</strong>, i.e. only render the
+table rows that the user can see or the list items the user can see.</p>
+<p>This is great because it can be applied to complex UIs without going through the <strong>what</strong> step,
+although I recommend it; and modern libraries tend to have decent support for virtualizing
+your tables and lists. A good example of this is <a href="https://github.com/bvaughn/react-virtualized">react-virtualized</a>.</p>
+<blockquote>
+<p>Virtualizing means that we <strong>reduce the amount of components React needs to render in a given frame</strong>.</p>
+</blockquote>
+<h4 id="props-optimization"><a href="#props-optimization" aria-label="props optimization permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Props Optimization</h4>
+<p>React tries to make your components look like pure functions but still will try to render
+more times than it should.</p>
+<h5 id="code-classlanguage-textreactmemocode"><a href="#code-classlanguage-textreactmemocode" aria-label="code classlanguage textreactmemocode permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code class="language-text">React.memo</code></h5>
+<p>Most components in React can be <strong>memoized</strong>, which means that they do not have internal side effects
+or depend on any external side effects so that we can guarantee than <strong>with the same props the component
+will return the same tree</strong> (hooks, state and context are still respected though).</p>
+<p>For that we can use <a href="https://reactjs.org/docs/react-api.html#reactmemo">React.memo</a>.
+This tells React to skip re rendering these memoized components if their
+props didn’t change.</p>
+<h5 id="fake-prop-changes-code-classlanguage-textusecallbackcode"><a href="#fake-prop-changes-code-classlanguage-textusecallbackcode" aria-label="fake prop changes code classlanguage textusecallbackcode permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fake prop changes: <code class="language-text">useCallback</code></h5>
+<p>Additionally we have the problem of <strong>fake prop changes</strong> which means that although
+the content of a given prop didn’t change, the reference did. The most classic example
+of this is the event handler one:</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">MyComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">onChange</span> <span class="token operator">=</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>input onChange<span class="token operator">=</span><span class="token punctuation">{</span>onChange<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>The <code class="language-text">onChange</code> callback, although semantically and content wise will be the same on every render, will be
+be stored in a completely separate memory direction so React will detect it as different from the previous one.</p>
+<p>This is related to how <code class="language-text">React.memo</code> does shallow comparison by default (although there’s no good way of
+deeply comparing functions in Javascript AFAIK).</p>
+<p>An easy fix for this is to use <code class="language-text">useCallback</code> which was designed exactly for this:</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">MyComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> onChange <span class="token operator">=</span> <span class="token function">useCallback</span><span class="token punctuation">(</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>input onChange<span class="token operator">=</span><span class="token punctuation">{</span>onChange<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h5 id="fake-prop-changes-code-classlanguage-textusememocode"><a href="#fake-prop-changes-code-classlanguage-textusememocode" aria-label="fake prop changes code classlanguage textusememocode permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fake prop changes: <code class="language-text">useMemo</code></h5>
+<p>A similar problem can rise when building complex data structures and not memoizing them
+correctly before passing them as props.</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">MyComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> rows <span class="token operator">=</span> data
+    <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>bySearchCriteria<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>bySortOrder<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>Table data<span class="token operator">=</span><span class="token punctuation">{</span>rows<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>This means that on every render we are re creating the <code class="language-text">rows</code> array, and although
+the content might not change, the shallow compare with the previous version will mark
+it as different. To solve this React provides <code class="language-text">useMemo</code>:</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">MyComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> rows <span class="token operator">=</span> <span class="token function">useMemo</span><span class="token punctuation">(</span>
+    <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> data<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>bySearchCriteria<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>bySortOrder<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span>deps<span class="token punctuation">]</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>Table data<span class="token operator">=</span><span class="token punctuation">{</span>rows<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>This will ensure rows are only recalculated when the dependencies change (most likely props or state).</p>
+<p>You can also customize the way <code class="language-text">React.memo</code> compares current vs previous props but be aware that this
+calculation should be fast since it is effectively part of the <strong>Render phase</strong> and you probably
+don’t want to perform trivially nested deep comparisons on every render.</p>
+<h3 id="summary"><a href="#summary" aria-label="summary permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Summary</h3>
+<p>The React profile is really good at telling you why a given component rendered out of
+the three main options. Let’s cover each option and potential paths of improvements</p>
+<h4 id="props-changed"><a href="#props-changed" aria-label="props changed permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Props changed</h4>
+<p>How it looks in the React dev tool:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 374px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/43f3e9b7af652229f54cc30dd90a81de/52dba/propsChanged.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 71.62162162162163%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAADBklEQVQ4y6WSS28bVRiG55dUCMRFLSD1giohBO2CBRKrRqFAAyoLSsUfQAKxQSwqWtFwEYKoSKlKQqu4OKlJTB07IjF1DKnjGc/YsXDtXMZ2JolnPPY4sRNIHz5PqLgI2LB49Z7v/p5zPuXZwNd8qKf5OJeh39D4KKtxUVe5oKa4kL4t/N84LzkXtXneno1zdGgQ5c3YTVy3TqFYxKyUWVpZwdpYZ7PTpvPLDu2dbcHOv2JL4ru7v1KsOxy7NiQNk3EKK8tcCYzw/vkPfP5k4Avy5gre3V1saexsd3B2On/wn2CLz5PBulPj+HgQ5fVwCHdrk4KoM0RlwTTJlorcqVRYWltj0bKELZ//CcXVVaq1GrrkHBu6jHJmOkpdGpqOjdVsstpwWW95VBwH064JbJ8rcqVKvU7V3cOe7VCWvA2pM+wNjo+NoLwxM0VVCqK3fuBqMEhMeE7PMDkzQ1JVGb5+ncn4DKHJCIFQiO+Ts/4AV65a/x0tubIhvmdGpeE74yNstrewahuY1iq218CS4LrrUGvU5YPWaG55frzrc7wmTcnf5i71TQ+72fA/sLhW4ezAOZT+VIzSYolPP/+Mwa+uEJ9NEI5GGPjyEt/cGGP46jBjoSBz6RSj34YIjAa5LHnB0A3Gb37HcrXMtig0a1XeC/SjvHttkJooSmsqmaxBcu4nsvkF4olbGAs5MkYGTfby5zsFVHmKH2/P+bGUmmapbNIQlR1ZnWJ5mbPn3kJ56dRrePKoxVKJZDKJYRhkMhlM+W1d11HlHTWxs9ks8/Pz5PN5Go0GhUJB8nRyuRyLUqvrBgePPIXyyukz2KKwW9wtiEajRCIRNE3z7enpaWKxGOFwmImJCVKpFJasSyKRYGpqyhfRHZbLLXD46NMoJ18+jed5/tQuN0VtV3HXvudrtVr++R47sip+nsRc16XdbpNWNQ4+IQofP/QkJ3pP0fNCn88nevv2IPaer+8v8Z6/+bvoffFVnnu+h4cPHEZ5aP8h9j1wgH33/x/s574HH+ORR4/wG1UAgKJIvjsEAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="props changed in react dev tool"
+        title="props changed in react dev tool"
+        src="/static/43f3e9b7af652229f54cc30dd90a81de/52dba/propsChanged.png"
+        srcset="/static/43f3e9b7af652229f54cc30dd90a81de/12f09/propsChanged.png 148w,
+/static/43f3e9b7af652229f54cc30dd90a81de/e4a3f/propsChanged.png 295w,
+/static/43f3e9b7af652229f54cc30dd90a81de/52dba/propsChanged.png 374w"
+        sizes="(max-width: 374px) 100vw, 374px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Did they really? Are they <code class="language-text">fake prop changes</code>? Use <code class="language-text">useCallback</code> and <code class="language-text">useMemo</code>.</p>
+<h4 id="parent-rendered"><a href="#parent-rendered" aria-label="parent rendered permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parent rendered</h4>
+<p>How it looks in the React dev tool:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 468px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ebb58cb61db4a6c158db12d038b954d3/90372/parentRendered.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACTklEQVQoz1WRWW8SURTH+TgmmvggCT7Zz6CJvqDWxJr4KXzQ+GDiiwlWxbQaaGQpNVACEduCEgYYtgFkGYZl2IeyDKtGH8y/915Kl4df/uecuffM/5yreW19AyH3FfvRfezGfPDyLriibljDHnxLeuBPuBDP7OGA+wIn58BOYA9ubhcBzgwvZ4Pb/xly4BmaoReI7dyGxmAwIpPOQkgK4CNRpFNpgoBCLo+fP4I4+H6IfK6I0VDFYrbAfDrHjLFgOie1yewP/v77j3v6J6Th5gdEoxGYzGZsbW/D6XQyPB4P7HY7rFYry2VZhqIo6HQ66HS76BI6p7TbLUzGKh6sbywbLhYLKL0e1PEYw+GQxYrSw2ikMnrHx2g2W2g0mkual5HrdaiqivvrxOHbd0bU6zKCwSA4joMgCEgmk8hkMvD7/YjFeHZ4MpmcQfOLjEYjZkr/cGPZsNdTkEqlUC6Xkc/nUa1WIYoii2mt3W6j1WoRl02mdArKYDBg9Pt9zOfzZcP3xi0cHR3CZDLB5/OxvXm9XthsNrY76trhcLDcYrEgkUhgOp0yp1Qp4/EEv1cODZtGspcGstksSqUSo0jcVSoV1Go1FItFgsjqIoE6pg8kSRKbgNYKhQJzzHZo/PiJ2O4jEomQsZOIhMPs1X+RH+RyOfA8j1AoxHYZj8eIxtg6VnV6j05BGz56/BSa5y9fsZcrEBcUsSQRNxK5VDrLxdN8FS8dS2cUybeSVMadu3porl7XQXtzDTd0t6DVUV3GVM/zy2gvnDnXNVy5psUJ7O/HHnYYwcYAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="parent rendered in react dev tool"
+        title="parent rendered in react dev tool"
+        src="/static/ebb58cb61db4a6c158db12d038b954d3/90372/parentRendered.png"
+        srcset="/static/ebb58cb61db4a6c158db12d038b954d3/12f09/parentRendered.png 148w,
+/static/ebb58cb61db4a6c158db12d038b954d3/e4a3f/parentRendered.png 295w,
+/static/ebb58cb61db4a6c158db12d038b954d3/90372/parentRendered.png 468w"
+        sizes="(max-width: 468px) 100vw, 468px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Use <code class="language-text">React.memo</code> to memoize your <em>pure</em> components.</p>
+<h4 id="hooks-changed-state-context"><a href="#hooks-changed-state-context" aria-label="hooks changed state context permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Hooks changed (state, context)</h4>
+<p>How it looks in the React dev tool:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 349px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/58291fd55b3efef9880d05555b493555/e9bf8/hooksChanged.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 71.62162162162163%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAADP0lEQVQ4y0WSW1NaZxSG9y+KzU37C/or2pvMdNqrJL3tRS/aXjS96/SgVaEtYDlJVE4iCQqIqAkIkShkooIHjpszylHi07V3Og0z73zr8H0v613vVj6z/s6XK0a+Xv+Hh14zjwSPfZb3sZyPvB/iDzUzDz1mvffYv6S/1Tg0LuX+X/O4c0fUr7vURgNUQUni+nhI+aZHbdinMRlR7V/rtYqc6nBAazqhOrih0Kyjyn1P7hiNS7m35iTeUNmOxbCuPMUmCEYiBKMRXF4Podg2ga0twaZeC0bCRPf39d5eOk3ndsLt3R2xWoUZ9zLKx8ZZti8KvD07ZdZgwGgx64+WHA5W/X4sdjtmmw3PRoA/LRYcqys411b5ZW6OyO4utV6Xbr8vHHk+ES7lc/ssyaszWt0OqqAhF8qNOrV2S0ddas3r3v+x2mnr0GqlusrJxTlqo0GqWEDjUh6sGTgo5ekIUaleoyo7qXfbtGVXlaYq5CpXIqcsvVq7SUmt6mdT9taTfffGAybTW9LlAg/cBpRPF35mJ39CNpfD5XGz6vMSkl29yh4T2AwRe7GPwfS3Xg/vxHCKZPe6X+TG6QphXQYZTsbsnZ+icSn3XDbC5SJDWW5RpDQG4qq4WJWL9f6NjpImXyRqNa3flL6WX7+b0hay/nhMRDg0LmXGZiKuVnCICd89+ZElp5OdZJLfFhaYMxpwixmLJhMmm5WoTLvi98kdB1aXi1/n/2DZ62VXXI9VinxkN8uEi+KWLPaqXOJAZL7MHJKSMy3YT6d4e3lBNn9GIpPhzXmBo9MTDo6PSLzOENnbJf0mR0smjwrHjHAp991OXXJPpJxWypwUrzhXa2QLeV1isdUkK0R56Z3XqhQEOck16SOgI4aMRHpUJtS4lBmzkS35Di9LRV4evWZdjPA+C7IsBu0cJHlx+Ap/6Lmer4l8s8POUzFI+4PWf7vsj0eEL2VC4VK+mP+erFiu/SbTKe+4Y3qnne9z7ZOY3mlVGIxGDAVaPBYTx2LIcDzS32ZOs3y1+APKN9YnmKIu/AdhPIkQ8ZSXdMZDILGBO7mJL/GcSCpAIBnEI7k/GSKS3tBryYyPw6yfuOSOkJlvnT/xL7FKrm1W+fWGAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="hooks changed in react dev tool"
+        title="hooks changed in react dev tool"
+        src="/static/58291fd55b3efef9880d05555b493555/e9bf8/hooksChanged.png"
+        srcset="/static/58291fd55b3efef9880d05555b493555/12f09/hooksChanged.png 148w,
+/static/58291fd55b3efef9880d05555b493555/e4a3f/hooksChanged.png 295w,
+/static/58291fd55b3efef9880d05555b493555/e9bf8/hooksChanged.png 349w"
+        sizes="(max-width: 349px) 100vw, 349px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Nothing too obvious to do here. Try to validate that the hook that
+changed makes sense. Perhaps a bad context provider is faking out
+changes the same way as <code class="language-text">fake prop changes</code> might appear.</p>
+<h2 id="closing"><a href="#closing" aria-label="closing permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Closing</h2>
+<p>By now you should feel pretty confident in your skills to identify and improve
+Performance problems in React. Of course <em>theory</em> and <em>practice</em> are different beasts
+but your problem wont be far away from the ones we’ve covered, perhaps you will have to
+deal with library updates, or components out of your control but that’s life!</p>
+<hr/>
+<p>Like the content? Consider subscribing, buying me a coffee or even becoming a Patreon below.</p></section><style data-emotion-css="10ckprm">.css-10ckprm{text-align:center;border:2px solid #FF00FF;border-radius:5px;margin-bottom:18px;padding:5px;}.css-10ckprm form{margin:0;}.css-10ckprm form > div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}.css-10ckprm form > div > *{margin:0px 4px;}</style><div class="css-10ckprm eosl09g0"><h3>Subscribe to our mailing list!</h3><h4>Get exclusive content, offers and become a friend!</h4><div id="mc_embed_signup"><form action="https://nosleepjavascript.us2.list-manage.com/subscribe/post?u=c388336980630bd93629517cb&amp;id=53ee07001f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate=""><div id="mc_embed_signup_scroll"><div class="mc-field-group" style="display:inline-block"><label for="mce-EMAIL" style="display:none">email <span style="color:red">*</span> </label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email address"/></div><div id="mce-responses" style="position:absolute"><div class="response" id="mce-error-response" style="display:none"></div><div class="response" id="mce-success-response" style="display:none"></div></div><div style="position:absolute;left:-5000px" aria-hidden="true"><input type="text" name="b_c388336980630bd93629517cb_53ee07001f" tabindex="-1"/></div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"/></div></form></div></div><style data-emotion-css="97rap9">.css-97rap9{margin-bottom:1.625rem;}</style><hr class="css-97rap9"/><footer><style data-emotion-css="k6ta3s">.css-k6ta3s{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:4.0625rem;}</style><div class="css-k6ta3s e1rgz5o20"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;margin-right:0.8125rem;margin-bottom:0;min-width:50px;border-radius:100%"><div aria-hidden="true" style="width:100%;padding-bottom:87.99999999999999%"></div><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAIAAADUsmlHAAAACXBIWXMAAB2HAAAdhwGP5fFlAAACjUlEQVQ4y2P4jwr+/fsHJL9++dLT1RkbFZGWkrxy+fL379/BpZABAxr/79+/QPLyxYsWpiYqSkoaykou9naLFsz/jw2ga/7z5w+QbKitsVSVKorwWFafHuFgLCYscujgAbjRBGzesnHd9vasnwfm/D+1fH1bgaCgwKSJE+BG49QM8diL508nF8Yc6i1cVZ++tafETlf19GEibIZo/vLp/Zn5bfeWd77YNOX8guYj0+v+f/sIkcanGa5i68SqVeXxFxe2nJxVfW7LEpAwqrXYNUMUndm9dk9P/obOgukFYZeO7iFKM9DZf8GhcmDvriw/y3xvgy0tSetn9xw4fPT6tes/f/4kYDMwSJ88eRIREZ7oqDkhw7cxL8nTzc3dw9va2nbPnr3IwcaAFlTv3r3r6OgMj4i0srZ0d7KzMDU2s7T18w/MzMzOyMxdtnwlclJjQNYJJNva2wMCgyOjon39fH18/ULDwvMLivLyi2Jj41NSUpOSU65dvw63nAE5bew9cNDR1T0yJiYkNAQIAgID0zOycnLzw8IjIyIiMzOz4uISdu7cjaIZYu3nz58mtdaWpUYFBwd4eXkFBASGhYUBrQqPjPLy9k5ISEhLS4uKilm/fj0WzauWLT47p+760uakYA9zKytPT4/wcKDfo9zc3aNjolNT0zIyMkNDIzZs2IjQDKFu374NNHtBR8XVlT0N6WGW1jZBQUH+AQGWFibOjg5ABwNRUlJqSEjY9es3EJohaX3OnDlOri7BQItiYuPi4qNjgFRCdkrC6o789MTY0PDI8LBwX1//iooqeNAiNE+cNFFPT9fJ2dHZ1dXF1c3MzMTCwiIiNDgzJc7PP8DX19fb29vOzn7jxo3I8QwAkD8cNPji0p0AAAAASUVORK5CYII=" alt="franleplant" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/3d0df698a9c84ca995878f7c2815d974/69585/franleplant-profile.png 200w,
+/static/3d0df698a9c84ca995878f7c2815d974/497c6/franleplant-profile.png 400w,
+/static/3d0df698a9c84ca995878f7c2815d974/edb0e/franleplant-profile.png 620w" sizes="(max-width: 620px) 100vw, 620px" /><img loading="lazy" sizes="(max-width: 620px) 100vw, 620px" srcset="/static/3d0df698a9c84ca995878f7c2815d974/69585/franleplant-profile.png 200w,
+/static/3d0df698a9c84ca995878f7c2815d974/497c6/franleplant-profile.png 400w,
+/static/3d0df698a9c84ca995878f7c2815d974/edb0e/franleplant-profile.png 620w" src="/static/3d0df698a9c84ca995878f7c2815d974/edb0e/franleplant-profile.png" alt="franleplant" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><style data-emotion-css="1uk1gs8">.css-1uk1gs8{margin:0;}</style><p class="css-1uk1gs8">Written by <strong><a href="https://twitter.com/franleplant">franleplant</a></strong>: <!-- -->Tech Lead and Software developer with a degree in Engineering. Woodworker, all things Javascript, Rust and Software Architecture.<!-- --> <a href="https://github.com/franleplant" target="_blank" rel="noopener noreferrer">Github</a></p></div><style data-emotion-css="1cckvuk">.css-1cckvuk{margin-top:-20px;margin-bottom:20px;}</style><div class="css-1cckvuk"><div><a href="https://www.buymeacoffee.com/Kp6R5Zr"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=Kp6R5Zr&amp;button_colour=FFDD00&amp;font_colour=000000&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=ffffff" alt="buy me coffee"/></a></div><div><a href="https://www.patreon.com/bePatron?u=44509257" data-patreon-widget-type="become-patron-button">Become a Patron!</a></div></div></footer></article><style data-emotion-css="e42043">.css-e42043{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;list-style:none;padding:0;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media (min-width:800px){.css-e42043{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}</style><nav class="css-e42043 e5iwqvu0"><style data-emotion-css="d6w1ze">.css-d6w1ze{border:1px solid #FF00FF;border-radius:2px;padding:8px 16px;margin:2px;}@media (min-width:800px){.css-d6w1ze{width:49%;}}</style><div class="css-d6w1ze e5iwqvu1"><a rel="prev" href="/programming-principles/">← <!-- -->Secrets of a Tech Lead: Programming Principles</a></div><div class="css-d6w1ze e5iwqvu1"><a rel="next" href="/ibridge/">Breaking the iframe frontier: ibridge<!-- --> →</a></div></nav><style data-emotion-css="1eyoxlr">.css-1eyoxlr{margin-top:20px;margin-bottom:20px;color:#ccc;}</style><div class="css-1eyoxlr e14frcs80"></div></main><footer>© <!-- -->2021<!-- -->, nosleepjavascript.com</footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-154632381-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/react-performance/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f33cc994945b2249d5ee.js"],"app":["/app-b1e139d0da4ec73b7381.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-3241c106c435f58ca4bd.js"],"component---src-pages-about-tsx":["/component---src-pages-about-tsx-ab533fcf78dbe17aad64.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-600ba704604721ac4f4a.js"],"component---src-templates-blog-post-tsx":["/component---src-templates-blog-post-tsx-13d8f6300d73de8b3055.js"]};/*]]>*/</script><script src="/polyfill-f33cc994945b2249d5ee.js" nomodule=""></script><script src="/component---src-templates-blog-post-tsx-13d8f6300d73de8b3055.js" async=""></script><script src="/07df214fa9a6bfa95f2aa0c4b93680dbfb4b3ad9-8b678077d6dbe8f052d8.js" async=""></script><script src="/201ad6c3f2c882b9d9cf079e4b183f9823aadb3d-8b06601edeb74dd5b1c5.js" async=""></script><script src="/app-b1e139d0da4ec73b7381.js" async=""></script><script src="/framework-741ade27086b2708e961.js" async=""></script><script src="/styles-55e82d6ff5158c00b714.js" async=""></script><script src="/webpack-runtime-04fbafd859ab94f12b33.js" async=""></script></body></html>
